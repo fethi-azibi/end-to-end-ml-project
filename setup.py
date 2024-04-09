@@ -4,6 +4,13 @@ from typing import List
 HYPEN_E_DOT = "-e ."
 
 def get_requirements(file_path:str) -> List[str]:
+    """
+    Args:
+        file_path (str): path to requirements.txt file
+
+    Returns:
+        List[str]: return list of requirements
+    """
     requirements = []
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
